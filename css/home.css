@@ -1,0 +1,157 @@
+:root {
+  --pink:#F25454;
+  --secondary:#999;
+  --grey:#666;
+  --offwhite:#FAFAFA;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.offwhite {
+  background-color: var(--offwhite);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+#home h1 {
+  font-size: 70px;
+}
+
+.carousel-caption {
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.title {
+  position: relative;
+  font-size: 38px;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 0.5px;
+  background-color: black;
+  top: 120%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.title:hover::after {
+  width: 50px;
+}
+
+.title-description {
+  font-size: 18px;
+  color: var(--secondary);
+}
+
+.title-shadow {
+  font-size: 76px;
+  opacity: 0.1;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.mini-card {
+  padding: 0px 15px 0px 30px;
+}
+
+.mini-card h5 {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.mini-card p, .mini-card span {
+  color: var(--grey);
+}
+
+.mini-card:hover h5 {
+  color: var(--pink);
+}
+
+.mini-card:hover:hover .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.7;
+}
+
+.mini-card:hover:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.member-card {
+  overflow: hidden;
+}
+
+.member-card img {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  border-radius: 5px;
+}
+
+.member-card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--pink);
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+.member-card .overlay li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.member-card .overlay a {
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.progress {
+  height: 5px;
+  background-color: #eee;
+  margin: 5px 0 15px;
+}
+
+.progress-bar {
+  background-color: var(--pink);
+}
+/*# sourceMappingURL=home.css.map */
