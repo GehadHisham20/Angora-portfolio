@@ -134,3 +134,18 @@ h5{
     background-color: var(--pink);
   
 }
+
+.pink-btn{
+    color: white;
+    background-color: var(--pink);
+    border-radius: 5px;
+    padding: 18px 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    vertical-align: bottom;
+    font-weight: 700;
+    &:hover{
+        color: white;
+        background-color: rgba($color: #F25454, $alpha: 0.7);
+    }
+}

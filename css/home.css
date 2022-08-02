@@ -154,4 +154,21 @@ h5 {
 .progress-bar {
   background-color: var(--pink);
 }
+
+.pink-btn {
+  color: white;
+  background-color: var(--pink);
+  border-radius: 5px;
+  padding: 18px 30px;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  vertical-align: bottom;
+  font-weight: 700;
+}
+
+.pink-btn:hover {
+  color: white;
+  background-color: rgba(242, 84, 84, 0.7);
+}
 /*# sourceMappingURL=home.css.map */
