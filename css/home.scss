@@ -50,7 +50,10 @@ h5{
 .nav-padding{
     padding: 2rem 10rem;
     border-bottom: 1px solid var(--secondary);
+    
 }
+
+
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
     color: var(--pink) !important;
@@ -62,6 +65,19 @@ h5{
     &:hover{
         color: var(--pink) !important;
     }
+}
+@media screen and (max-width: 992px) {
+    .nav-padding{
+        padding: 2rem 3rem;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        color: black;
+    }
+    .navbar-collapse{
+        background-color: white;
+        
+    }
+    
 }
 .title{
     position: relative;

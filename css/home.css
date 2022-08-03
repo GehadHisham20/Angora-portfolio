@@ -77,6 +77,18 @@ h5 {
   color: var(--pink) !important;
 }
 
+@media screen and (max-width: 992px) {
+  .nav-padding {
+    padding: 2rem 3rem;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+  .navbar-collapse {
+    background-color: white;
+  }
+}
+
 .title {
   position: relative;
   font-size: 38px;

@@ -8,10 +8,11 @@ window.onscroll = function() {
   if(currentScrollPos>screen.height){
     navbar.style.backgroundColor ="white";
     navbar.style.top ="0px";
+    navPadding.style.borderBottom="none"
     navbarLink.forEach(element=>{
         element.style.color="#000";
     })
-    navPadding.style.padding="1rem 10rem"
+ 
   }
   else if (prevScrollpos < currentScrollPos) {
     navbar.style.top ="-100px"; 
@@ -22,7 +23,7 @@ window.onscroll = function() {
     navbarLink.forEach(element=>{
         element.style.color="white";
     })
-    navPadding.style.padding="2rem 10rem"
+
   }
   prevScrollpos = currentScrollPos;
 }
