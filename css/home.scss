@@ -3,6 +3,7 @@
     --secondary:#999;
     --grey:#666;
     --offwhite:#FAFAFA;
+   
 }
 body{
     font-family: "Poppins", sans-serif;
@@ -31,6 +32,36 @@ h5{
 .carousel-caption {
     bottom: 50%;
     transform: translateY(50%);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s;
+}
+.nav-padding{
+    padding: 2rem 10rem;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
+    color: var(--pink) !important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    &:hover{
+        color: var(--pink) !important;
+    }
 }
 .title{
     position: relative;
@@ -142,7 +173,7 @@ h5{
     padding: 18px 30px;
     text-decoration: none;
     transition: 0.5s;
-    vertical-align: bottom;
+   
     font-weight: 700;
     &:hover{
         color: white;
@@ -195,4 +226,12 @@ h5{
         display: inline-block;
         margin: 0 15px;
     }
+}
+.up-to-home{
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    transform: translateY(50%);
+    border-radius: 50%;
+    padding: 20px 25px ;
 }
